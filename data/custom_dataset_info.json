@@ -1,0 +1,359 @@
+{
+    "kto_hh_rlhf": {
+        "hf_hub_url": "/data/wangjun/github/cjtrans/datasets/kto_hh_rlhf_dataset",
+        "formatting": "sharegpt",
+        "columns": {
+            "messages": "messages",
+            "kto_tag": "label"
+        },
+        "tags": {
+            "role_tag": "role",
+            "content_tag": "content",
+            "user_tag": "user",
+            "assistant_tag": "assistant"
+        }
+    },
+    "kto_zhihu_3k": {
+        "hf_hub_url": "/data/wangjun/github/cjtrans/datasets/kto_zhihu_3k_dataset",
+        "formatting": "sharegpt",
+        "columns": {
+            "messages": "messages",
+            "kto_tag": "label"
+        },
+        "tags": {
+            "role_tag": "role",
+            "content_tag": "content",
+            "user_tag": "user",
+            "assistant_tag": "assistant"
+        }
+    },
+    "kto_en_demo": {
+        "file_name": "kto_en_demo.json",
+        "formatting": "sharegpt",
+        "columns": {
+            "messages": "messages",
+            "kto_tag": "label"
+        },
+        "tags": {
+            "role_tag": "role",
+            "content_tag": "content",
+            "user_tag": "user",
+            "assistant_tag": "assistant"
+        }
+    },
+    "kto_mix_en": {
+        "hf_hub_url": "argilla/kto-mix-15k",
+        "split": "train",
+        "formatting": "sharegpt",
+        "columns": {
+            "messages": "completion",
+            "kto_tag": "label"
+        },
+        "tags": {
+            "role_tag": "role",
+            "content_tag": "content",
+            "user_tag": "user",
+            "assistant_tag": "assistant"
+        }
+    },
+    "wikipedia_en": {
+        "hf_hub_url": "olm/olm-wikipedia-20221220",
+        "ms_hub_url": "AI-ModelScope/olm-wikipedia-20221220",
+        "columns": {
+            "prompt": "text"
+        }
+    },
+    "wikipedia_en_30k": {
+        "hf_hub_url": "olm/olm-wikipedia-20221220",
+        "ms_hub_url": "AI-ModelScope/olm-wikipedia-20221220",
+        "columns": {
+            "prompt": "text"
+        },
+        "num_samples": 30000
+    },
+    "wikipedia_en_100k": {
+        "hf_hub_url": "olm/olm-wikipedia-20221220",
+        "ms_hub_url": "AI-ModelScope/olm-wikipedia-20221220",
+        "columns": {
+            "prompt": "text"
+        },
+        "num_samples": 100000
+    },
+    "wikipedia_en_1000k": {
+        "hf_hub_url": "olm/olm-wikipedia-20221220",
+        "ms_hub_url": "AI-ModelScope/olm-wikipedia-20221220",
+        "columns": {
+            "prompt": "text"
+        },
+        "num_samples": 100000
+    },
+    "wikipedia_zh": {
+        "hf_hub_url": "pleisto/wikipedia-cn-20230720-filtered",
+        "ms_hub_url": "AI-ModelScope/wikipedia-cn-20230720-filtered",
+        "columns": {
+            "prompt": "completion"
+        }
+    },
+    "wikipedia_zh_30k": {
+        "hf_hub_url": "pleisto/wikipedia-cn-20230720-filtered",
+        "ms_hub_url": "AI-ModelScope/wikipedia-cn-20230720-filtered",
+        "columns": {
+            "prompt": "completion"
+        },
+        "num_samples": 30000
+    },
+    "wikipedia_zh_100k": {
+        "hf_hub_url": "pleisto/wikipedia-cn-20230720-filtered",
+        "ms_hub_url": "AI-ModelScope/wikipedia-cn-20230720-filtered",
+        "columns": {
+            "prompt": "completion"
+        },
+        "num_samples": 100000
+    },
+    "wikipedia_zh_500k": {
+        "hf_hub_url": "pleisto/wikipedia-cn-20230720-filtered",
+        "ms_hub_url": "AI-ModelScope/wikipedia-cn-20230720-filtered",
+        "columns": {
+            "prompt": "completion"
+        },
+        "num_samples": 500000
+    },
+    "wikipedia_ja": {
+        "hf_hub_url": "llm-book/japanese-wikipedia",
+        "columns": {
+            "prompt": "text"
+        }
+    },
+    "wikipedia_ja_30k": {
+        "hf_hub_url": "llm-book/japanese-wikipedia",
+        "columns": {
+            "prompt": "text"
+        },
+        "num_samples": 30000
+    },
+    "wikipedia_ja_100k": {
+        "hf_hub_url": "llm-book/japanese-wikipedia",
+        "columns": {
+            "prompt": "text"
+        },
+        "num_samples": 100000
+    },
+    "baidu_baike": {
+        "hf_hub_url": "xuqinyang/BaiduBaike-5.63M",
+        "columns": {
+            "prompt": "summary"
+        }
+    },
+    "skypile_150b": {
+        "hf_hub_url": "Skywork/SkyPile-150B",
+        "columns": {
+            "prompt": "text"
+        }
+    },
+    "skypile_150b_1000k": {
+        "hf_hub_url": "Skywork/SkyPile-150B",
+        "columns": {
+            "prompt": "text"
+        },
+        "num_samples": 1000000
+    },
+    "github_repos": {
+        "hf_hub_url": "code-rag-bench/github-repos",
+        "columns": {
+            "prompt": "text"
+        }
+    },
+    "github_repos_10k": {
+        "hf_hub_url": "code-rag-bench/github-repos",
+        "columns": {
+            "prompt": "text"
+        },
+        "num_samples": 10000
+    },
+    "github_repos_200k": {
+        "hf_hub_url": "code-rag-bench/github-repos",
+        "columns": {
+            "prompt": "text"
+        },
+        "num_samples": 200000
+    },
+    "code_qa_10K": {
+        "hf_hub_url": "ashikshaffi08/code_qa_10K",
+        "columns": {
+            "system": null,
+            "prompt": "prompt",
+            "response": "code_content"
+        }
+    },
+    "pretrain_cangjie": {
+        "hf_hub_url": "/data/wangjun/github/cjtrans/datasets/cangjie_pretrain_dataset",
+        "columns": {
+            "prompt": "text"
+        }
+    },
+    "pretrain_cangjie_doc": {
+        "hf_hub_url": "/data/wangjun/github/cjtrans/datasets/cangjie_pretrain_documents_dataset",
+        "columns": {
+            "prompt": "text"
+        }
+    },
+    "sft_cangjie": {
+        "hf_hub_url": "/data/wangjun/github/cjtrans/datasets/cangjie_sft_dataset",
+        "formatting": "sharegpt",
+        "columns": {
+            "messages": "messages"
+        },
+        "tags": {
+            "role_tag": "role",
+            "content_tag": "content",
+            "user_tag": "user",
+            "assistant_tag": "assistant",
+            "system_tag": "system"
+        }
+    },
+    "sft_cangjie_full": {
+        "hf_hub_url": "/data/wangjun/github/cjtrans/datasets/cangjie_sft_full_dataset",
+        "formatting": "sharegpt",
+        "columns": {
+            "messages": "messages"
+        },
+        "tags": {
+            "role_tag": "role",
+            "content_tag": "content",
+            "user_tag": "user",
+            "assistant_tag": "assistant",
+            "system_tag": "system"
+        }
+    },
+    "sft_cangjie_selfdebug": {
+        "hf_hub_url": "/data/wangjun/github/cjtrans/datasets/cangjie_sft_selfdebug_documents_dataset",
+        "formatting": "sharegpt",
+        "columns": {
+            "messages": "messages"
+        },
+        "tags": {
+            "role_tag": "role",
+            "content_tag": "content",
+            "user_tag": "user",
+            "assistant_tag": "assistant",
+            "system_tag": "system"
+        }
+    },
+    "dpo_cangjie": {
+        "hf_hub_url": "/data/wangjun/github/cjtrans/datasets/cangjie_feedback_dpo_dataset",
+        "ranking": true,
+        "formatting": "sharegpt",
+        "columns": {
+            "messages": "conversations",
+            "chosen": "chosen",
+            "rejected": "rejected"
+        }
+    },
+    "kto_cangjie": {
+        "hf_hub_url": "/data/wangjun/github/cjtrans/datasets/cangjie_feedback_kto_dataset",
+        "formatting": "sharegpt",
+        "columns": {
+            "messages": "messages",
+            "kto_tag": "label"
+        },
+        "tags": {
+            "role_tag": "role",
+            "content_tag": "content",
+            "user_tag": "user",
+            "assistant_tag": "assistant"
+        }
+    },
+    "kto_cangjie_full": {
+        "hf_hub_url": "/data/wangjun/github/cjtrans/datasets/cangjie_feedback_kto_full_dataset",
+        "formatting": "sharegpt",
+        "columns": {
+            "messages": "messages",
+            "kto_tag": "label"
+        },
+        "tags": {
+            "role_tag": "role",
+            "content_tag": "content",
+            "user_tag": "user",
+            "assistant_tag": "assistant"
+        }
+    },
+    "KTO_Comparison_Gpt4_data_zh": {
+        "hf_hub_url": "svjack/KTO_Comparison_Gpt4_data_zh",
+        "formatting": "sharegpt",
+        "columns": {
+            "messages": "messages",
+            "kto_tag": "label"
+        },
+        "tags": {
+            "role_tag": "role",
+            "content_tag": "content",
+            "user_tag": "user",
+            "assistant_tag": "assistant"
+        }
+    },
+    "moe_girl_clean": {
+        "hf_hub_url": "Vtuber-plan/moe_girl_clean",
+        "columns": {
+            "prompt": "text"
+        }
+    },
+    "CoreSocialistValuesQA": {
+        "hf_hub_url": "Vtuber-plan/CoreSocialistValuesQA",
+        "formatting": "sharegpt",
+        "columns": {
+            "messages": "conversations"
+        },
+        "tags": {
+            "role_tag": "role",
+            "content_tag": "content",
+            "user_tag": "user",
+            "assistant_tag": "assistant",
+            "system_tag": "system"
+        }
+    },
+    "sharegpt_cleaned": {
+        "hf_hub_url": "Vtuber-plan/sharegpt-cleaned",
+        "formatting": "sharegpt",
+        "columns": {
+            "messages": "messages"
+        },
+        "tags": {
+            "role_tag": "role",
+            "content_tag": "content",
+            "user_tag": "user",
+            "assistant_tag": "assistant",
+            "system_tag": "system"
+        }
+    },
+    "sharegpt_cleaned_10k": {
+        "hf_hub_url": "Vtuber-plan/sharegpt-cleaned",
+        "formatting": "sharegpt",
+        "columns": {
+            "messages": "messages"
+        },
+        "tags": {
+            "role_tag": "role",
+            "content_tag": "content",
+            "user_tag": "user",
+            "assistant_tag": "assistant",
+            "system_tag": "system"
+        },
+        "num_samples": 10000
+    },
+    "hydraulic_QA_sft": {
+        "hf_hub_url": "Chennzi/hydraulic_QA_sft",
+        "columns": {
+            "system": "instruction",
+            "prompt": "input",
+            "response": "output"
+        }
+    },
+    "dusker_lawyer_llama": {
+        "hf_hub_url": "Dusker/lawyer-llama",
+        "columns": {
+            "system": "instruction",
+            "prompt": "input",
+            "response": "output"
+        }
+    }
+}
