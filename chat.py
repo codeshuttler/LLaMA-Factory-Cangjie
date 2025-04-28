@@ -4,16 +4,8 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 
 device = "cuda:1"  # the device to load the model onto
 
-# model_path = "saves/nyagpt-qwen2-7b-v0.3/lora/pretrain/checkpoint-8000"
-# model_path = "saves/policygpt-qwen2-7b/lora/sft/checkpoint-23000"
-# model_path = "Qwen/Qwen2-7B-Instruct"
-# model_path = "saves/cangjie-qwen2-7b/lora/sft/checkpoint-10221"
-# model_path = "saves/cangjie-qwen2.5-7b/lora/pretrain/checkpoint-100"
-# model_path = "saves/policygpt-qwen2-7b/lora/sft/checkpoint-24500"
-# model_path = "/data/xsj/save/demo/sft/checkpoint-42899"
-# model_path = "saves/policygpt-qwen1.5-1.8b-v0.1/full/sft/checkpoint-12500"
-# model_path = "saves/cangjie-qwen2.5-7b/lora/sft/checkpoint-4700"
-model_path = "saves/cangjie-qwen2-7b/lora/sft_full_v3/checkpoint-44182"
+
+model_path = "Qwen/Qwen2-7B-Instruct"
 
 model = AutoModelForCausalLM.from_pretrained(
     model_path,

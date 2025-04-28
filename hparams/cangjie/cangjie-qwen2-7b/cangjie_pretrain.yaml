@@ -15,10 +15,10 @@ cutoff_len: 4096
 overwrite_cache: true
 preprocessing_num_workers: 16
 packing: true
-tokenized_path: tmp_dataset/cangjie-qwen2-7b/lora/pretrain
+tokenized_path: tmp_dataset/cangjie-qwen2-7b/full/pretrain
 
 ### output
-output_dir: saves/cangjie-qwen2-7b/lora/pretrain
+output_dir: saves/cangjie-qwen2-7b/full/pretrain
 logging_steps: 10
 save_steps: 100
 plot_loss: true
