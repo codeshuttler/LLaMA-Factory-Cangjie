@@ -1,0 +1,49 @@
+### model
+model_name_or_path: Qwen/Qwen2-7B
+use_fast_tokenizer: true
+disable_gradient_checkpointing: false
+flash_attn: auto
+enable_liger_kernel: true
+
+### method
+stage: pt
+do_train: true
+finetuning_type: lora
+pissa_init: true
+pissa_convert: true
+lora_target: all
+lora_rank: 256
+lora_alpha: 128
+lora_dropout: 0.0
+
+### dataset
+dataset: wikipedia_en_100k,wikipedia_zh_30k,github_repos_200k,pretrain_cangjie,pretrain_cangjie_doc
+cutoff_len: 4096
+overwrite_cache: true
+preprocessing_num_workers: 16
+packing: true
+tokenized_path: tmp_dataset/cangjie-qwen2-7b/lora/pretrain
+
+### output
+output_dir: saves/cangjie-qwen2-7b/lora/pretrain
+logging_steps: 10
+save_steps: 100
+plot_loss: true
+overwrite_output_dir: true
+report_to: tensorboard
+
+### train
+per_device_train_batch_size: 4
+gradient_accumulation_steps: 4
+learning_rate: 1.0e-4
+num_train_epochs: 3.0
+lr_scheduler_type: cosine
+warmup_ratio: 0.1
+bf16: true
+ddp_timeout: 180000000
+
+### eval
+val_size: 100
+per_device_eval_batch_size: 4
+eval_strategy: steps
+eval_steps: 500

@@ -31,8 +31,8 @@ For dataset details, refer to [data/README.md](data/README.md). You can either u
 After setting the path of the relevant dataset in `data/custom_dataset_info.json`, use the following commands to run **Pretraining**, **Fine-tuning**, and **KTO** for the qwen2-7b model:
 
 ```bash
-llamafactory-cli train hparams/cangjie/cangjie-qwen2-7b/cangjie_lora_pretrain.yaml
-llamafactory-cli train hparams/cangjie/cangjie-qwen2-7b/cangjie_lora_sft.yaml
+llamafactory-cli train hparams/cangjie/cangjie-qwen2-7b/cangjie_pretrain.yaml
+llamafactory-cli train hparams/cangjie/cangjie-qwen2-7b/cangjie_sft.yaml
 llamafactory-cli train hparams/cangjie/cangjie-qwen2-7b/cangjie_lora_kto.yaml
 ```
 
